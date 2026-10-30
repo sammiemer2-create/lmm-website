@@ -1,0 +1,1 @@
+document.getElementById('langToggle')?.addEventListener('click',e=>{const b=e.currentTarget;b.textContent=b.textContent==='EN'?'中文':'EN';document.documentElement.lang=b.textContent==='EN'?'zh-Hans':'en';});
