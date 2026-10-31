@@ -105,6 +105,41 @@ Separate protected admin login; never expose admin controls in public navigation
 - Editable homepage announcement/promotion panel with enable/disable and schedule.
 - Admin can manage Agents and Workshops, assign partner IDs, agreements, orders/tasks, commission/settlement rules and statuses.
 
+### Partner Agreement Management｜合作伙伴协议管理
+
+LMM Admin must include a dedicated Partner Agreement Management module.
+
+**1. Partner Agreements**
+- Agent Partners and Workshop Partners must use separate partnership agreements.
+- LMM Admin can upload, create, and update agreement documents.
+- Every agreement must record an agreement version number, effective date, and applicable partner type.
+- Each partner must be presented with the agreement applicable to their partner type and must review and formally accept it.
+
+**2. Partner Review and Activation**
+1. LMM Admin creates the partner profile.
+2. Admin selects the partner type: Agent or Workshop Partner.
+3. The system issues the corresponding partnership terms and agreement.
+4. The partner reviews and accepts the applicable agreement.
+5. LMM Admin reviews the partner application and, after approval, sets the partnership status to **Active**.
+6. Partner Portal login access is enabled only after Admin approval and activation. Agreement acceptance alone must not automatically grant portal access.
+
+**3. Agreement Records**
+For each partner agreement, the system must retain:
+- Partner ID
+- Partner Type
+- Agreement Version
+- Acceptance Date
+- Effective Date
+- Agreement Status
+- Partnership Termination Date (if applicable)
+
+**4. Access Control**
+- Agent Partners may view only their own referred customers, attributed orders, and commission records.
+- Workshop Partners may view only production tasks assigned to them and the information necessary to complete those tasks.
+- Partners must not access other partners' records or customers' private Memories.
+- LMM Admin has full authorised access to view and manage all partner agreements and their records.
+- Agreement status, partner activation status, and Partner Portal access status must be tracked separately so that a pending, expired, suspended, or terminated agreement cannot leave portal access active unintentionally.
+
 ## Roles and permissions
 - Customer: own account, own pets, own orders and own private memories.
 - Pet Member: per-pet membership status/entitlement, not a separate login.
