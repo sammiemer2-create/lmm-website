@@ -62,6 +62,14 @@ Each independent page may contain: introduction, original product photographs, s
 - Founder Story｜创办人故事
 - Use the original system-designer artwork 2–7 in their intended positions; retrieve and map exact original files before publishing. Do not recreate these graphics.
 
+## Official Legal Documents｜正式文件总目录
+The following are the three official LMM legal documents. Maintain them as separate version-controlled documents:
+1. **Purchase Terms & Conditions｜购买条款与细则** — `legal/purchase-terms-and-conditions.md`
+2. **Membership & Welcome Offer Terms & Conditions｜会员与新会员礼遇条款** — `legal/membership-and-welcome-offer-terms.md`
+3. **Privacy Policy & Personal Data Protection Notice｜隐私政策与个人资料保护通知** — `legal/privacy-policy-and-personal-data-protection-notice.md`
+
+These documents are separate and must not be merged into one generic agreement. Effective dates and last-updated dates remain pending until confirmed by LMM Admin. Admin must be able to maintain document versions and effective dates.
+
 ## 05 Q&A｜常见问题与网站政策
 - FAQ｜常见问题, organised by product series, custom work, membership/account, ordering/payment.
 - Custom Process｜客制流程.
@@ -145,15 +153,16 @@ For each partner agreement, the system must retain:
 All legal terms, agreements, and consent documents must be presented through a **hidden, system-triggered modal or secure in-flow panel**. They must not appear as permanent public navigation pages or be openly displayed unless the user reaches the relevant action. The system displays only the document applicable to that user's action and role.
 
 **Required confirmation checkpoints**
-1. **Customer registration / becoming an LMM member:** show the Membership Terms & Conditions and Privacy Policy & Personal Data Protection Notice. The user must actively tick an initially unchecked acceptance box before registration can be completed.
-2. **Order and payment confirmation:** show the applicable Purchase Terms & Conditions and relevant product-specific terms before the customer submits the order or payment confirmation. The customer must actively accept before proceeding. This consent is separate from membership registration consent.
+1. **Customer registration / becoming an LMM member:** show the Membership & Welcome Offer Terms & Conditions for review and acceptance, and provide the separate Privacy Policy & Personal Data Protection Notice in the same registration flow. The user must actively tick an initially unchecked required acknowledgement/acceptance control for the applicable membership terms and privacy notice before registration can be completed.
+2. **Order and payment confirmation:** show the Purchase Terms & Conditions and relevant product-specific terms before the customer submits the order. The customer must actively accept before the order can be completed. This consent is separate from membership registration consent.
 3. **Agent activation:** show the Agent Partnership Agreement. The Agent must review and accept it before the Admin approval and activation process can continue.
 4. **Workshop Partner activation:** show the Workshop Partner Agreement. The Workshop Partner must review and accept it before the Admin approval and activation process can continue.
 
 **Interaction and record requirements**
 - The agreement panel is triggered only at the relevant registration, checkout/payment, or partner onboarding step; it is not a public-facing page in the main website menu.
 - The complete applicable document must be readable in the panel, with access to the full text or document.
-- Acceptance must be an explicit user action. The checkbox must never be pre-selected.
+- Acceptance must be an explicit user action. Required agreement checkboxes must never be pre-selected.
+- Optional marketing consent must be displayed as a separate, unchecked checkbox (for example: “I agree to receive LMM product news, offers and promotional updates”). It is not required for membership registration; declining it must not block account creation. Store this marketing preference separately and allow the user to change or withdraw it.
 - If the user does not accept, the relevant action must be blocked: no membership registration, order/payment confirmation, or partner agreement submission.
 - Store the user/customer/partner ID, role or partner type, document name, document version, acceptance timestamp, and the related registration/order/partner record.
 - Admin must be able to retrieve the acceptance history for audit and dispute handling.
