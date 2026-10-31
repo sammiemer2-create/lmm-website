@@ -140,6 +140,26 @@ For each partner agreement, the system must retain:
 - LMM Admin has full authorised access to view and manage all partner agreements and their records.
 - Agreement status, partner activation status, and Partner Portal access status must be tracked separately so that a pending, expired, suspended, or terminated agreement cannot leave portal access active unintentionally.
 
+## Hidden Agreement & Consent Confirmation｜隐藏式协议确认机制
+
+All legal terms, agreements, and consent documents must be presented through a **hidden, system-triggered modal or secure in-flow panel**. They must not appear as permanent public navigation pages or be openly displayed unless the user reaches the relevant action. The system displays only the document applicable to that user's action and role.
+
+**Required confirmation checkpoints**
+1. **Customer registration / becoming an LMM member:** show the Membership Terms & Conditions and Privacy Policy & Personal Data Protection Notice. The user must actively tick an initially unchecked acceptance box before registration can be completed.
+2. **Order and payment confirmation:** show the applicable Purchase Terms & Conditions and relevant product-specific terms before the customer submits the order or payment confirmation. The customer must actively accept before proceeding. This consent is separate from membership registration consent.
+3. **Agent activation:** show the Agent Partnership Agreement. The Agent must review and accept it before the Admin approval and activation process can continue.
+4. **Workshop Partner activation:** show the Workshop Partner Agreement. The Workshop Partner must review and accept it before the Admin approval and activation process can continue.
+
+**Interaction and record requirements**
+- The agreement panel is triggered only at the relevant registration, checkout/payment, or partner onboarding step; it is not a public-facing page in the main website menu.
+- The complete applicable document must be readable in the panel, with access to the full text or document.
+- Acceptance must be an explicit user action. The checkbox must never be pre-selected.
+- If the user does not accept, the relevant action must be blocked: no membership registration, order/payment confirmation, or partner agreement submission.
+- Store the user/customer/partner ID, role or partner type, document name, document version, acceptance timestamp, and the related registration/order/partner record.
+- Admin must be able to retrieve the acceptance history for audit and dispute handling.
+- If a material document revision requires renewed consent, prompt the affected users to accept the new version before they continue the relevant protected action.
+- Partner agreement acceptance does not itself activate a partner account; LMM Admin approval and Active status are still required before Partner Portal access is granted.
+
 ## Roles and permissions
 - Customer: own account, own pets, own orders and own private memories.
 - Pet Member: per-pet membership status/entitlement, not a separate login.
