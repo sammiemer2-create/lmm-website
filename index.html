@@ -1,15 +1,59 @@
 <!doctype html>
 <html lang="zh-Hans">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="LMM Pet Memorial Art — 从爱开始，一生陪伴。"><title>LMM｜Love • Memories • Memento</title><link rel="stylesheet" href="styles.css">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LMM Pet Memorial Art｜从爱开始，一生陪伴。">
+<title>LMM｜LOVE • MEMORIES • MEMENTO</title>
 <style>
-:root{--paper:#f5f1ec;--ink:#39362f;--muted:#81796e;--line:#e6ded4}
-body{margin:0;color:var(--ink);font:15px/1.8 Arial,"Noto Sans SC",sans-serif}.site-header{position:sticky;top:0;z-index:9;background:#fffF;border-bottom:1px solid var(--line);padding:12px 4vw;display:flex;justify-content:space-between;align-items:center;gap:20px;backdrop-filter:blur(12px)}.brand{color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;letter-spacing:2px;font-size:10px}.brand strong{font: bold 27px Georgia}.main-nav{display:flex;gap:14px;flex-wrap:wrap}.main-nav a{color:var(--ink);text-decoration:none;font-size:11px;letter-spacing:1px}.hero{min-height:70vh;background:var(--paper);display:grid;place-items:center;text-align:center;padding:60px 8vw}.hero-inner{max-width:850px}.eyebrow{letter-spacing:3px;color:var(--muted);font-size:11px}.hero h1{font:normal clamp(30px,4vw,48px)/1.5 Georgia,"Noto Serif SC",serif}.hero p{color:#686157;max-width:740px;margin:15px auto}.slogan{letter-spacing:2px;font-size:12px}.section{padding:65px 7vw}.section h2{font:normal clamp(25px,3vw,36px) Georgia,"Noto Serif SC",serif}.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.tile{background:var(--paper);border:1px solid var(--line);padding:25px;color:var(--ink);text-decoration:none;min-height:130px}.tile small{color:var(--muted);letter-spacing:2px}.tile h3{font:normal 21px Georgia,"Noto Serif SC",serif}.image-slot{min-height:230px;border:1px dashed #cfc5b9;background:#faf8f5;display:grid;place-items:center;text-align:center;color:var(--muted);padding:20px}.site-footer{padding:40px 7vw;background:#39362f;color:var(--paper);font-size:12px}@media(max-width:850px){.site-header{align-items:flex-start;flex-direction:column}.main-nav{gap:9px 12px}.hero{min-height:55vh}}
-</style></head>
+:root{--paper:#f5f1ec;--ink:#37332e;--muted:#73695f;--accent:#a87956;--line:#e5d9cd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif}
+header{height:92px;background:#fffdfb;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;gap:28px}
+.brand{text-decoration:none;color:var(--ink);min-width:240px}.brand b{display:block;font:30px Georgia,serif;letter-spacing:5px}.brand span{display:block;font-size:9px;letter-spacing:2.7px;color:#80776e}
+nav{display:flex;align-items:center;gap:clamp(12px,2vw,29px);flex-wrap:wrap}nav a{font-size:11px;letter-spacing:1px;text-decoration:none;color:#514a43}nav a:hover{color:var(--accent)}
+.lang{display:flex;gap:5px;margin-left:10px}.lang button{border:1px solid var(--line);background:transparent;padding:7px 12px;color:#655a50;cursor:pointer;font-size:11px}.lang button.active{background:#55483d;color:white;border-color:#55483d}
+.hero{position:relative;min-height:calc(100vh - 92px);display:flex;align-items:center;padding:7vw 8vw;background:#d9b39a url('assets/lmm-homepage-cover.jpg') center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(66,43,30,.66) 0%,rgba(66,43,30,.43) 38%,rgba(66,43,30,.04) 73%)}
+.copy{position:relative;z-index:1;max-width:650px;color:white;text-shadow:0 1px 12px rgba(35,20,12,.18)}
+.kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;margin-bottom:25px;color:#fff0df}
+h1{font:normal clamp(34px,4.2vw,58px)/1.5 Georgia,"Noto Serif SC",serif;margin:0 0 18px;letter-spacing:1px}
+.copy p{font-size:clamp(14px,1.2vw,17px);line-height:2.15;margin:8px 0;max-width:620px}
+.slogan{margin-top:26px!important;font:italic 18px Georgia,serif;letter-spacing:1.5px}
+.copy[hidden]{display:none}
+.hero-mark{position:absolute;right:5vw;bottom:28px;color:#fff;font:11px Georgia,serif;letter-spacing:3px;text-shadow:0 1px 8px #72513d}
+@media(max-width:900px){header{height:auto;min-height:85px;padding:15px 5vw;align-items:flex-start;flex-direction:column;gap:12px}.brand{min-width:0}nav{gap:12px}.hero{min-height:calc(100vh - 145px);padding:12vw 7vw;background-position:58% center}.hero:before{background:linear-gradient(90deg,rgba(52,37,28,.70),rgba(52,37,28,.24))}.copy{max-width:580px}}
+@media(max-width:560px){.brand b{font-size:25px}nav a{font-size:10px}.hero{min-height:78vh;background-position:57% center}.hero:before{background:linear-gradient(90deg,rgba(52,37,28,.72),rgba(52,37,28,.27))}h1{font-size:32px}.copy p{font-size:13px;line-height:1.9}.hero-mark{font-size:9px}}
+</style>
+</head>
 <body>
-<header class="site-header"><a class="brand" href="index.html"><strong>LMM</strong><span>LOVE • MEMORIES • MEMENTO</span></a><nav class="main-nav"><a href="index.html">HOME</a><a href="shop.html">SHOP</a><a href="account.html">MY ACCOUNT</a><a href="our-story.html">OUR STORY</a><a href="qa.html">Q&A</a><a href="customer-care.html">CUSTOMER CARE</a><a href="space-of-love.html">A SPACE OF LOVE</a></nav></header>
+<header>
+<a class="brand" href="index.html"><b>LMM</b><span>LOVE • MEMORIES • MEMENTO</span></a>
+<nav aria-label="Main navigation">
+<a href="index.html">HOME</a><a href="shop.html">SHOP</a><a href="account.html">MY ACCOUNT</a><a href="our-story.html">OUR STORY</a><a href="qa.html">Q&A</a><a href="customer-care.html">CUSTOMER CARE</a><a href="space-of-love.html">A SPACE OF LOVE</a>
+<div class="lang"><button id="zhBtn" class="active" type="button">中文</button><button id="enBtn" type="button">EN</button></div>
+</nav>
+</header>
 <main>
-<section class="hero"><div class="hero-inner"><p class="eyebrow">LMM · PET MEMORIAL ART</p><h1>爱引远方虹桥路，盅守人间归处家。</h1><p>每一段生命故事，都值得拥有独一无二的纪念。</p><p>LMM 以 Resin 定制宠物陪伴纪念艺术，将最珍贵的毛孩子回忆，化作永恒的陪伴。</p><p class="slogan">Begin With Love. Stay Forever.</p><div class="image-slot">首页 Hero 主视觉｜等待接入姐姐指定的图 8 原图<br>此处不会用其他图片或 AI 图替代</div></div></section>
-<section class="section"><p class="eyebrow">FROM LOVE TO PEACEFUL HOME</p><h2>从爱开始，到归宿</h2><p>有些纪念，不是从离开开始，而是从初爱开始。LMM 相信，纪念不一定发生在最后一天。从第一次见面、第一次回家、第一颗乳牙、第一撮毛发，到一起成长陪伴、一起变老的日子，那些看似平凡的小事，其实都在组成她／他的生命故事。真正的爱从相遇开始，不只存在于离开以后。</p><p class="muted">记录爱 → 成长 → 陪伴 → 收藏 → 老去 → 想念 → 延续</p></section>
-<section class="section"><p class="eyebrow">DISCOVER LMM</p><h2>每一份爱，都有自己的纪念方式</h2><div class="image-slot">首页产品展示区｜等待接入姐姐指定的图 1 原图与已确认产品照片</div><p><a href="shop.html">探索全部作品 →</a></p><div class="tiles"><a class="tile" href="products/peaceful-home.html"><small>URN HOME</small><h3>Peaceful Home｜小屋子</h3><p>From Love to Peaceful Home.</p></a><a class="tile" href="products/keepsake.html"><small>GROWTH</small><h3>Keepsake Collection｜成长珍藏</h3></a><a class="tile" href="products/memory.html"><small>LIFE MEMORIES</small><h3>Memory Collection｜生活记忆</h3></a></div></section>
-<section class="section"><p class="eyebrow">A SPACE OF LOVE</p><h2>爱的记忆空间</h2><p>让每一段珍贵陪伴，都有一个可以被看见、被珍藏的地方。</p><a href="space-of-love.html">进入 A Space of Love →</a></section>
-</main><footer class="site-footer"><strong>LMM · LOVE • MEMORIES • MEMENTO</strong><p>从爱开始，一生陪伴。 · Begin With Love. Stay Forever.</p><p>Instagram　Facebook　小红书</p></footer></body></html>
+<section class="hero" aria-label="LMM homepage cover">
+<div class="copy" id="zhCopy">
+<div class="kicker">LMM · PET MEMORIAL ART · MALAYSIA</div>
+<h1>爱引远方虹桥路，<br>盅守人间归处家。</h1>
+<p>每一段生命故事，都值得拥有独一无二的纪念。</p>
+<p>LMM 以 Resin 定制宠物陪伴纪念艺术，<br>将最珍贵的毛孩子回忆，化作永恒的陪伴。</p>
+<p class="slogan">Begin With Love. Stay Forever.</p>
+</div>
+<div class="copy" id="enCopy" hidden>
+<div class="kicker">LMM · PET MEMORIAL ART · MALAYSIA</div>
+<h1>Beyond the Rainbow Bridge,<br>Love Finds Its Way Home.</h1>
+<p>Every life leaves a story worth remembering.<br>Every bond deserves a tribute as unique as the love it holds.</p>
+<p>LMM creates bespoke Pet Companion Memorial Art through the artistry of resin, transforming precious memories into timeless keepsakes.</p>
+<p class="slogan">Begin With Love. Stay Forever.</p>
+</div>
+<div class="hero-mark">LOVE · MEMORIES · MEMENTO</div>
+</section>
+</main>
+<script>
+const zh=document.getElementById('zhCopy'),en=document.getElementById('enCopy'),zb=document.getElementById('zhBtn'),eb=document.getElementById('enBtn');
+function setLang(lang){const isZh=lang==='zh';zh.hidden=!isZh;en.hidden=isZh;zb.classList.toggle('active',isZh);eb.classList.toggle('active',!isZh);document.documentElement.lang=isZh?'zh-Hans':'en'}
+zb.addEventListener('click',()=>setLang('zh'));eb.addEventListener('click',()=>setLang('en'));
+</script>
+</body></html>
